@@ -158,7 +158,7 @@ int main(int argc, char **argv)
     /* 
      * Read and interpret the command line arguments 
      */
-    while ((c = getopt(argc, argv, "f:t:hvVgal")) != EOF) {
+    while ((c = getopt(argc, argv, "f:t:hvVgal")) != 255) {
         switch (c) {
 	case 'g': /* Generate summary info for the autograder */
 	    autograder = 1;
